@@ -8,6 +8,7 @@ public class maximumSubArray {
     // Space is constant
 
     // It covers the iteration when we need to print the number which add upto the sum
+    // also covers the negative values
     public static int maxSubArray(int[] nums) {
         int sum = 0;
         int maxi = Integer.MIN_VALUE;
@@ -35,7 +36,7 @@ public class maximumSubArray {
     }
 
     public static void main(String[] args) {
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] nums = {-2,-1,-3,-4,-1,-2,-1,-5,4};
         System.out.println(maxSubArray(nums));
     }
 }
