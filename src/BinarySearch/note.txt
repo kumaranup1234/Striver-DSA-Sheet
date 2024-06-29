@@ -1,0 +1,12 @@
+Rule of Thumb for left and right
+1. Finding a Minimum Feasible Value (Smallest Satisfying Value):
+
+ -Left will contain the answer.
+ -Use while (left < right) or while (left <= right).
+ -Example: Finding the smallest x such that a condition is satisfied (find smallest x).
+
+2. Finding a Maximum Feasible Value (Largest Satisfying Value):
+
+ -Right will contain the answer.
+ -Use while (left <= right).
+ -Example: Finding the largest x such that a condition is satisfied (find largest x).
