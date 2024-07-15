@@ -17,6 +17,7 @@ public class middleNode {
             slow = slow.next;
             fast = fast.next.next;
         }
+        System.out.println(fast.data);
         return slow;
     }
 
