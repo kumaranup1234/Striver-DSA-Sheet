@@ -26,11 +26,28 @@ public class subsets {
         }
         return res;
     }
-    // can be done using recursion also
+    // can be done using recursion
+
+    public static List<List<Integer>> subsetsSolRecursive(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, new ArrayList<>(), nums, 0);
+        return res;
+    }
+
+    public static void backtrack(List<List<Integer>> res, List<Integer> temp, int[] nums, int start) {
+        res.add(new ArrayList<>(temp));
+        for (int i = start; i < nums.length; i++) {
+            temp.add(nums[i]);
+            backtrack(res, temp, nums, i+1);
+            temp.removeLast();
+        }
+    }
+
 
 
     public static void main(String[] args) {
         int[] nums = {1,2,3};
         System.out.println(subsetsSol(nums));
+        System.out.println(subsetsSolRecursive(nums));
     }
 }
