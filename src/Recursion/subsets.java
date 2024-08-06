@@ -38,7 +38,7 @@ public class subsets {
         res.add(new ArrayList<>(temp));
         for (int i = start; i < nums.length; i++) {
             temp.add(nums[i]);
-            backtrack(res, temp, nums, i+1);
+            backtrack(res, temp, nums, i + 1);
             temp.removeLast();
         }
     }
