@@ -10,7 +10,7 @@ import java.util.List;
 public class combinationSum2 {
     public static List<List<Integer>> combinationSum2Sol(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
-        // we need sorted combi.
+        // we need sorted combination.
         Arrays.sort(candidates);
         combinations(0, target, candidates, res, new ArrayList<>());
         return res;
