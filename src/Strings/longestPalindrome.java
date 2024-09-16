@@ -1,7 +1,5 @@
 package Strings;
 
-import java.util.Arrays;
-
 public class longestPalindrome {
     public static int longestPalindromeSol(String s) {
         if (s.length() == 1) {
